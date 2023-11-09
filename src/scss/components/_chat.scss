@@ -1,0 +1,68 @@
+.chat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    width: 100%;
+    background: var(--blue-color);
+    border: 1px solid #000000;
+    color: var(--light-color);
+    padding: 10px;
+    h1 {
+      font-size: 16px;
+      margin: unset;
+    }
+  }
+
+  &__window {
+    display: flex;
+    max-height: 250px;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  &__user-list, &__messages  {
+    border: 1px solid;
+    overflow-y: scroll;
+    padding: 10px;
+    max-height: 100vh;
+  }
+
+  &__user-list {
+    background: var(--gray-color);
+    width: 200px;
+  }
+
+  &__messages {
+    background: #e0f2fa;
+    width: 100%;
+  }
+
+  &__footer {
+    display: flex;
+    gap: 5px;
+    min-height: 100px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--gray-color);
+    border: 1px solid;
+    padding: 10px;
+  }
+
+  textarea {
+    display: block;
+    padding: 10px;
+    height: 150px;
+    resize: none;
+  }
+
+  button {
+    width: 150px;
+  }
+}
